@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-列表-表格的结构标签</title>
+</head>
+<body>
+    <!-- table是表格框架，包含tr，tr是表格的行单元格，包含td，td是单元格内容 -->
+    <!-- border是边框宽度，width是表格宽度，height是表格高度 -->
+    <table border="1">
+    <!-- caption是表格大标题 -->
+        <caption><strong><h2>学生成绩单</h2></strong></caption>
+        <!-- thead是表格头部标签，表格结构标签内部用于包裹tr标签，表格的结构标签可以省略 -->
+        <thead>
+            <tr>
+                <!-- 第一个单元格宽度和高度固定，可以固定第一行的行高和第一列的列宽 -->
+                <th width="100" height="30">姓名</th>
+                <!-- 其他列的宽度需另外定义 -->
+                <th width="100">成绩</th>
+                <th width="150">评语</th>
+            </tr>
+        </thead>
+        <!-- tbody是表格主体标签 -->
+        <tbody>
+            <tr>
+                <!-- 其他行的行高需另外定义 -->
+                <td height="30">小哥哥</td>
+                <td>100分</td>
+                <td>小哥哥真帅气</td>
+            </tr>
+            <tr>
+                <td height="30">小姐姐</td>
+                <td>100分</td>
+                <td>小姐姐真漂亮</td>
+            </tr>
+        </tbody>
+        <!-- tfoot是表格底部标签 -->
+        <tfoot>
+            <tr>
+                <td height="30">总结</td>
+                <td>郎才女貌</td>
+                <td>郎才女貌</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
